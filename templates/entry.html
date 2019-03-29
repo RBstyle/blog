@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>{{ entry.title }}<a href="/admin/edit/{{ entry.name }} " class="btn btn-primary">Редактировать</a><a href="/admin/delete/{{ entry.name }} " class="btn btn-danger ml-2">Удалить</a></h1>
+	<p>{{ entry.content }}</p>
+{% endblock %}

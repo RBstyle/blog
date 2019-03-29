@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+  <p>Вы действительно хотите удалить?"{{ entry.title }}"?</p>
+  <button type="submit" class="btn btn-danger">Удалить</button>
+  <a href="/entry/{{ entry.name }}" class="btn btn-secondary">Отмена</a>
+</form>
+{% endblock %}
